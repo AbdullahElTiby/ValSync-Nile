@@ -7,7 +7,7 @@ IF "%PROCESSOR_ARCHITECTURE%"=="AMD64" (set _arch=x86_64)
 IF DEFINED PROCESSOR_ARCHITEW6432 (set _arch=x86_64)
 
 CALL profiles.cmd 1
-start "ValSync Nile" "%_arch%\goodbyedpi.exe" %GDPI_ARGS%
+start "VALSYNC Nile" "%_arch%\goodbyedpi.exe" %GDPI_ARGS%
 
 POPD
 ENDLOCAL

@@ -1,5 +1,5 @@
 @ECHO OFF
-REM Shared profile definitions for ValSync Nile.
+REM Shared profile definitions for VALSYNC Nile.
 REM Usage: CALL profiles.cmd <number>   -> sets GDPI_ARGS and GDPI_NAME
 REM Edit this file to tune a profile; every launcher and the service installer read it.
 

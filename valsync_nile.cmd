@@ -16,7 +16,7 @@ IF ERRORLEVEL 1 (
 :menu
 cls
 echo ==========================================================
-echo   ValSync Nile
+echo   VALSYNC Nile
 echo   Works on WE (TE Data), Vodafone, Orange, Etisalat/e^&
 echo ==========================================================
 echo.
@@ -48,8 +48,8 @@ IF NOT DEFINED GDPI_ARGS goto menu
 
 echo.
 echo Starting profile %choice%: %GDPI_NAME%
-start "ValSync Nile" "%_arch%\goodbyedpi.exe" %GDPI_ARGS%
-echo Started. Close the ValSync Nile window to stop it. If sites still fail, try another profile.
+start "VALSYNC Nile" "%_arch%\goodbyedpi.exe" %GDPI_ARGS%
+echo Started. Close the VALSYNC Nile window to stop it. If sites still fail, try another profile.
 pause
 goto menu
 
@@ -62,8 +62,8 @@ IF NOT "%_arch%"=="x86_64" (
 CALL voice_profiles.cmd %choice:~1%
 echo.
 echo Starting voice profile %choice%: %VOICE_NAME%
-start "ValSync Nile Voice" /min "voice\winws.exe" %VOICE_ARGS%
-echo Started (minimized). Close the "ValSync Nile Voice" window to stop it.
+start "VALSYNC Nile Voice" /min "voice\winws.exe" %VOICE_ARGS%
+echo Started (minimized). Close the "VALSYNC Nile Voice" window to stop it.
 echo Restart the game / Discord so voice reconnects through the bypass.
 pause
 goto menu

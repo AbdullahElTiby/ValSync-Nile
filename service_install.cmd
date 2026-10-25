@@ -13,7 +13,7 @@ IF ERRORLEVEL 1 (
     goto end
 )
 
-echo Install ValSync Nile as a Windows service (auto-starts with Windows).
+echo Install VALSYNC Nile as a Windows service (auto-starts with Windows).
 echo Test profiles first with valsync_nile.cmd and pick the one that works on your ISP.
 echo.
 echo   1  Recommended - fake packets + DNS
@@ -38,7 +38,7 @@ set "SVC_ARGS=%GDPI_ARGS:"=\"%"
 sc stop "ValSync" >nul 2>&1
 sc delete "ValSync" >nul 2>&1
 sc create "ValSync" binPath= "\"%CD%\%_arch%\goodbyedpi.exe\" %SVC_ARGS%" start= "auto"
-sc description "ValSync" "Bypasses DPI censorship in Egypt (ValSync Nile, profile %choice%)."
+sc description "ValSync" "Bypasses DPI censorship in Egypt (VALSYNC Nile, profile %choice%)."
 sc start "ValSync"
 echo.
 echo Installed website profile %choice%: %GDPI_NAME%
@@ -59,7 +59,7 @@ IF NOT DEFINED VOICE_ARGS goto done
 
 set "SVC_VARGS=%VOICE_ARGS:"=\"%"
 sc create "ValSync-Voice" binPath= "\"%CD%\voice\winws.exe\" %SVC_VARGS%" start= "auto"
-sc description "ValSync-Voice" "Bypasses voice chat DPI in Egypt (ValSync Nile, voice profile %vchoice%)."
+sc description "ValSync-Voice" "Bypasses voice chat DPI in Egypt (VALSYNC Nile, voice profile %vchoice%)."
 sc start "ValSync-Voice"
 echo.
 echo Installed voice profile %vchoice%: %VOICE_NAME%

@@ -14,5 +14,5 @@ sc stop "WinDivert"
 sc delete "WinDivert"
 sc stop "WinDivert14"
 sc delete "WinDivert14"
-echo ValSync Nile services removed.
+echo VALSYNC Nile services removed.
 pause
